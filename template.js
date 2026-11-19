@@ -1,6 +1,6 @@
 (function () {
   // Couple's WhatsApp number for RSVP replies (country code + number)
-  var COUPLE_WHATSAPP = "91XXXXXXXXXX";
+  var COUPLE_WHATSAPP = "917871134250";
   var $ = function (s) { return document.querySelector(s); };
 
   // Opening gate
