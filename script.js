@@ -1,6 +1,6 @@
 (function () {
   // Set your WhatsApp number here (country code + number, no + or spaces)
-  var WHATSAPP = "91XXXXXXXXXX";
+  var WHATSAPP = "917871134250";
 
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
