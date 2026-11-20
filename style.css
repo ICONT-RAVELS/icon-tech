@@ -56,7 +56,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .theme:hover .preview{transform:scale(1.05)}
 .theme{overflow:hidden}
 .preview span{font:700 52px "Cormorant Garamond",serif}.preview i{color:#F3D9A4}.preview small{letter-spacing:.2em;text-transform:uppercase;font-size:12px;opacity:.9}
-.t1{background:linear-gradient(145deg,#5E1630,#C85A7C)}.t2{background:linear-gradient(145deg,#8A6420,#E8C877);color:#3b2a08}.t2 i{color:#7a1d38}
+.t1{background:linear-gradient(145deg,#5E1630,#C85A7C)}.t2{background:linear-gradient(135deg, #4B071B, #800F2F, #3A0617);color:#F8E7B0}.t2 i{color:#7a1d38}
 .t3{background:linear-gradient(145deg,#4F7A55,#C7DDB6);color:#17331b}.t3 i{color:#a43b5c}
 .t4{background:linear-gradient(145deg,#0E5E7E,#9CD8E2)}.t5{background:linear-gradient(145deg,#0B1631,#2F4C86)}.t6{background:linear-gradient(145deg,#EEE6DC,#FFFFFF);color:#2A1620}.t6 i{color:var(--rose)}
 .info{padding:20px 22px 22px}.info h3{font-size:26px;color:var(--plum)}.info p{margin:6px 0 14px;color:var(--muted);font-size:16px}
