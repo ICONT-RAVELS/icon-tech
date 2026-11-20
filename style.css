@@ -49,7 +49,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .chip:hover{border-color:var(--rose)}
 .chip.active{background:var(--plum);border-color:var(--plum);color:#fff}
 .themes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.theme{background:var(--car);border-radius:20px;overflow:hidden;border:1px solid var(--line);transition:transform .3s,box-shadow .3s}
+.theme{background:var(--card);border-radius:20px;overflow:hidden;border:1px solid var(--line);transition:transform .3s,box-shadow .3s}
 .theme:hover{transform:translateY(-8px);box-shadow:0 22px 40px rgba(107,30,58,.14)}
 .theme.hide{display:none}
 .preview{height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;transition:transform .5s}
