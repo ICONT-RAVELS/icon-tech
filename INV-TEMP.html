@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aaroon & Olivia – Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lobster&family=Amiri&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#4a3f45;--purple:#7a5fa8;--gold:#d4b45a;--p2:#b9a6e3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:#e9e4f5;font-family:Montserrat,Arial,sans-serif;color:var(--ink);display:flex;justify-content:center;overflow-x:hidden}
+.card{position:relative;width:100%;max-width:640px;background:radial-gradient(circle at 30% 10%,#fff 0,#f3f0fb 55%,#e9e3f7 100%);overflow:hidden;padding:190px 26px 200px;text-align:center}
+.cn{position:absolute;width:min(64vw,310px);aspect-ratio:1;pointer-events:none;z-index:1}
+.cn svg{width:100%;height:100%;overflow:visible;animation:sway 8s ease-in-out infinite;transform-origin:15% 15%}
+.cn.tl{top:-48px;left:-48px}.cn.tr{top:-48px;right:-48px;transform:scaleX(-1)}
+.cn.bl{bottom:-48px;left:-48px;transform:scaleY(-1)}.cn.br{bottom:-48px;right:-48px;transform:scale(-1,-1)}
+.cn.tr svg{animation-delay:-2s}.cn.bl svg{animation-delay:-4s}.cn.br svg{animation-delay:-6s}
+@keyframes sway{50%{transform:rotate(3deg) scale(1.02)}}
+.ef{position:absolute;width:140px;height:140px;pointer-events:none;z-index:1}
+.ef.l{left:-62px}.ef.r{right:-62px}
+.ef svg{width:100%;height:100%;overflow:visible;animation:sway 9s ease-in-out infinite}
+/* bloom */
+.pt{transform:scale(.02) rotate(-25deg);opacity:0;animation:open 2.8s var(--d,0s) cubic-bezier(.2,.9,.25,1) both paused}
+.go .pt{animation-play-state:running}
+@keyframes open{0%{transform:scale(.02) rotate(-25deg);opacity:0}25%{opacity:1}100%{transform:none;opacity:1}}
+.petals{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.pl{position:absolute;top:-30px;width:12px;height:16px;border-radius:70% 0 70% 0;opacity:.65;animation:fall linear infinite}
+@keyframes fall{to{transform:translate(70px,110vh) rotate(540deg)}}
+.content{position:relative;z-index:2}
+.bis{font-family:Amiri,serif;font-size:2.2rem;color:var(--purple);margin:0 0 26px;opacity:0;animation:fade 2s .4s forwards}
+@keyframes fade{to{opacity:1}}
+.intro{font-size:1.15rem;letter-spacing:.14em;line-height:1.7;margin:0 auto 34px;max-width:420px;opacity:0;animation:fade 1.4s 1.1s forwards}
+.ring{position:relative;width:min(340px,82vw);aspect-ratio:1;margin:0 auto 46px;display:grid;place-items:center}
+.ring>svg.gr{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.gr circle{fill:none;stroke:var(--gold);stroke-width:2.5;stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 3s 1.8s ease forwards}
+.gr circle:nth-child(2){stroke:#c9a14a;stroke-width:1.8;animation-delay:2.3s}
+.gr circle:nth-child(3){stroke-width:1.2;animation-delay:2.8s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.rc{position:absolute;width:62%;aspect-ratio:1;pointer-events:none}
+.rc svg{width:100%;height:100%;overflow:visible}
+.rc.a{top:-22%;left:-22%}.rc.b{bottom:-22%;right:-22%;transform:rotate(180deg)}
+.names{position:relative;font-family:Lobster,cursive;font-size:3.1rem;line-height:1.05;opacity:0;animation:fade 1.6s 3.4s forwards}
+.amp{display:block;font-size:2.2rem;color:var(--purple);margin:2px 0}
+.big{font-size:2rem;font-weight:500;letter-spacing:.1em;margin:0}
+.dateRow{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;margin:12px 0}
+.side{padding:16px 6px;font-size:1.15rem;letter-spacing:.06em;border-top:4px solid var(--gold);border-bottom:4px solid var(--gold)}
+.day{font-size:6rem;font-weight:700;color:var(--purple);line-height:1}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 1s,transform 1s}
+.reveal.in{opacity:1;transform:none}
+.venue{margin-top:34px;font-size:1.25rem;line-height:1.6}
+.venue b{display:block;font-size:1.6rem;letter-spacing:.06em}
+.div{display:block;width:260px;height:70px;margin:46px auto 22px;overflow:visible}
+h2{font-family:Lobster,cursive;font-weight:400;font-size:2.2rem;color:var(--purple);margin:0 0 14px}
+p.t{max-width:440px;margin:0 auto;line-height:1.85;font-size:1.02rem}
+.tl-list{list-style:none;padding:0;margin:20px auto 0;max-width:380px;text-align:left;border-left:2px solid var(--gold)}
+.tl-list li{padding:0 0 22px 22px;position:relative}
+.tl-list li:before{content:"";position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--purple);box-shadow:0 0 0 4px #efe9fb}
+.tl-list b{display:block;color:var(--purple)}
+.btn{display:inline-block;border:0;background:var(--purple);color:#fff;font:500 1rem Montserrat,sans-serif;padding:13px 30px;border-radius:40px;cursor:pointer;text-decoration:none;margin-top:18px;transition:transform .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(122,95,168,.4)}
+.btn.o{background:transparent;color:var(--purple);border:1.5px solid var(--gold)}
+.btn:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.sw{display:flex;justify-content:center;gap:10px;margin-top:16px}
+.sw i{width:34px;height:34px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.cd{display:flex;justify-content:center;gap:10px}
+.cd div{background:rgba(255,255,255,.85);border:1px solid var(--gold);border-radius:12px;padding:10px 0;width:74px}
+.cd strong{display:block;font-size:1.6rem;color:var(--purple)}.cd span{font-size:.75rem}
+.rs{display:grid;gap:12px;max-width:340px;margin:18px auto 0}
+input,select{font:inherit;padding:13px 16px;border-radius:12px;border:1px solid var(--p2);background:#fff;color:var(--ink)}
+.msg{min-height:1.6em;margin-top:14px;color:var(--purple);font-weight:500}
+.foot{font-family:Lobster,cursive;font-size:1.8rem;color:var(--purple);margin-top:44px}
+body:not(.opened){overflow:hidden;height:100vh}
+body:not(.opened) .card *{animation-play-state:paused!important}
+#env{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#f6f2ff,#d9cdf3 70%,#bfaee6);transition:opacity 1s,transform 1.2s;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+#env.gone{opacity:0;transform:scale(1.25);pointer-events:none}
+#env .wrap{text-align:center}
+.env{position:relative;width:min(320px,84vw);height:min(214px,56vw);margin:0 auto;filter:drop-shadow(0 18px 30px rgba(80,50,130,.3));animation:floaty 4s ease-in-out infinite}
+.open .env{animation:none}
+@keyframes floaty{50%{transform:translateY(-8px)}}
+.env>div{position:absolute;inset:0}
+.env .back{background:#a58be0;border-radius:6px}
+.env .letter{inset:10px 14px;background:#fff;border-radius:4px;display:grid;place-items:center;font-family:Lobster,cursive;font-size:1.5rem;color:var(--purple);transition:transform 1s .7s cubic-bezier(.3,.9,.3,1);z-index:1;box-shadow:inset 0 0 0 4px #fff,inset 0 0 0 5px var(--gold)}
+.open .letter{transform:translateY(-62%)}
+.env .pocket{background:linear-gradient(#b9a4ec,#9a80d0);clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);z-index:2;border-radius:6px}
+.env .flap{background:linear-gradient(#8d74c4,#7a5fa8);clip-path:polygon(0 0,100% 0,50% 60%);transform-origin:top;transition:transform .8s,z-index 0s .4s;z-index:3;border-radius:6px 6px 0 0}
+.open .flap{transform:rotateX(180deg);z-index:0}
+.seal{position:absolute;left:50%;top:56%;width:62px;height:62px;margin:-31px 0 0 -31px;border-radius:50%;border:0;z-index:4;cursor:pointer;background:radial-gradient(circle at 35% 30%,#f3dc8f,#d4b45a 55%,#a67f2c);color:#4a3a14;font:700 1rem Lobster,cursive;box-shadow:0 4px 10px rgba(0,0,0,.3);transition:opacity .4s,transform .4s}
+.seal:hover{transform:scale(1.08)}
+.seal:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.open .seal{opacity:0;pointer-events:none}
+.hint{margin-top:38px;font-size:.95rem;letter-spacing:.16em;color:var(--purple);animation:blink 2s ease-in-out infinite}
+.open .hint{opacity:0;animation:none;transition:opacity .4s}
+@keyframes blink{50%{opacity:.35}}
+@media (max-width:480px){.names{font-size:2.5rem}.day{font-size:4.6rem}.side{font-size:.88rem}.intro{font-size:1rem}.cd div{width:64px}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important;animation-iteration-count:1!important;transition:none!important}.petals{display:none}}
+</style>
+</head>
+<body>
+<div id="env" role="dialog" aria-label="Wedding invitation envelope"><div class="wrap">
+  <div class="env"><div class="back"></div><div class="letter">Aaroon &amp; Olivia</div><div class="pocket"></div><div class="flap"></div><button class="seal" id="seal" aria-label="Open the invitation">A&amp;O</button></div>
+  <p class="hint">Tap the seal to open</p>
+</div></div>
+<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="gL" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#cdbdf0"/><stop offset="1" stop-color="#8265c4"/></linearGradient>
+<linearGradient id="gM" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#f1e9fc"/><stop offset=".5" stop-color="#a58be0"/><stop offset="1" stop-color="#6a4fae"/></linearGradient>
+<linearGradient id="gD" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#c3aaf0"/><stop offset="1" stop-color="#553a96"/></linearGradient>
+<linearGradient id="gP" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff2f9"/><stop offset=".55" stop-color="#eb98c9"/><stop offset="1" stop-color="#b8358e"/></linearGradient>
+<linearGradient id="gP2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#f6c7e3"/><stop offset="1" stop-color="#9d2c7c"/></linearGradient>
+<linearGradient id="gR" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e6dbf8"/><stop offset="1" stop-color="#9a80d0"/></linearGradient>
+<linearGradient id="gR2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#c4aeeb"/><stop offset="1" stop-color="#7459b3"/></linearGradient>
+<linearGradient id="gG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#5f8a55"/><stop offset="1" stop-color="#b3cf94"/></linearGradient>
+</defs></svg>
+
+<main class="card" id="card">
+  <div class="cn tl"><svg viewBox="0 0 300 300" data-c="1"></svg></div>
+  <div class="cn tr"><svg viewBox="0 0 300 300" data-c="1"></svg></div>
+  <div class="cn bl"><svg viewBox="0 0 300 300" data-c="1"></svg></div>
+  <div class="cn br"><svg viewBox="0 0 300 300" data-c="1"></svg></div>
+  <div class="petals" id="petals"></div>
+
+  <div class="content">
+    <p class="bis" lang="ar" dir="rtl">بسم الله الرحمن الرحيم</p>
+    <p class="intro">Please join us to celebrate the wedding of:</p>
+    <div class="ring">
+      <svg class="gr" viewBox="0 0 340 340"><circle cx="170" cy="170" r="154"/><circle cx="170" cy="170" r="148" transform="rotate(20 170 170)"/><circle cx="170" cy="170" r="142" transform="rotate(-25 170 170)"/></svg>
+      <div class="rc a"><svg viewBox="0 0 300 300" data-c="2"></svg></div>
+      <div class="rc b"><svg viewBox="0 0 300 300" data-c="2"></svg></div>
+      <div class="names">Aaroon<span class="amp">&amp;</span>Olivia</div>
+    </div>
+
+    <p class="big reveal">APRIL</p>
+    <div class="dateRow reveal"><div class="side">SATURDAY</div><div class="day">24</div><div class="side">AT 08:00 PM</div></div>
+    <p class="big reveal">2027</p>
+    <div class="venue reveal"><b>Liceria Grand Ballroom</b>123 Anywhere St., Any City,<br>ST 12345</div>
+
+    <svg class="div" viewBox="-130 -35 260 70" data-c="3"></svg>
+    <section class="reveal"><h2>Our story</h2>
+      <p class="t">Two people, one quiet promise. After years of laughter, long talks and small adventures, we decided to begin the next chapter together, and we would love for you to be there as we say yes in front of the people we hold dearest.</p></section>
+
+    <svg class="div" viewBox="-130 -35 260 70" data-c="3"></svg>
+    <section class="reveal"><h2>The evening</h2>
+      <ul class="tl-list">
+        <li><b>7:30 PM</b>Guests arrive and welcome drinks</li>
+        <li><b>8:00 PM</b>Wedding ceremony</li>
+        <li><b>9:00 PM</b>Dinner and toasts</li>
+        <li><b>10:00 PM</b>Music, dancing and celebration</li>
+      </ul></section>
+
+    <svg class="div" viewBox="-130 -35 260 70" data-c="3"></svg>
+    <section class="reveal"><h2>Dress code</h2>
+      <p class="t">Formal. Soft lilac, lavender, plum or touches of gold are warmly welcome.</p>
+      <div class="sw"><i style="background:#d9cdf3"></i><i style="background:#9a80d0"></i><i style="background:#7a5fa8"></i><i style="background:#d86fb5"></i><i style="background:#d4b45a"></i></div></section>
+
+    <svg class="div" viewBox="-130 -35 260 70" data-c="3"></svg>
+    <section class="reveal"><h2>Find us</h2>
+      <p class="t">Liceria Grand Ballroom, 123 Anywhere St., Any City, ST 12345</p>
+      <a class="btn o" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Liceria+Grand+Ballroom">Open in Maps</a></section>
+
+    <svg class="div" viewBox="-130 -35 260 70" data-c="3"></svg>
+    <section class="reveal"><h2>Counting down</h2>
+      <div class="cd" id="cd"><div><strong id="d">0</strong><span>days</span></div><div><strong id="h">0</strong><span>hours</span></div><div><strong id="m">0</strong><span>minutes</span></div><div><strong id="s">0</strong><span>seconds</span></div></div>
+      <p class="msg" id="cdm"></p></section>
+
+    <svg class="div" viewBox="-130 -35 260 70" data-c="3"></svg>
+    <section class="reveal"><h2>Will you join us?</h2>
+      <div class="rs">
+        <input id="nm" placeholder="Your name" aria-label="Your name">
+        <select id="gs" aria-label="Number of guests"><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option></select>
+        <button class="btn" id="yes" style="margin:0">Joyfully accept</button>
+        <button class="btn o" id="no" style="margin:0">Regretfully decline</button>
+      </div>
+      <p class="msg" id="msg" aria-live="polite"></p></section>
+    <div class="foot reveal">With love, Aaroon &amp; Olivia</div>
+  </div>
+  <div class="ef l" style="top:24%"><svg viewBox="-70 -70 140 140" data-c="4"></svg></div>
+  <div class="ef r" style="top:40%"><svg viewBox="-70 -70 140 140" data-c="5"></svg></div>
+  <div class="ef l" style="top:58%"><svg viewBox="-70 -70 140 140" data-c="5"></svg></div>
+  <div class="ef r" style="top:74%"><svg viewBox="-70 -70 140 140" data-c="4"></svg></div>
+</main>
+<script>
+const pp=(l,w)=>`M0 0C${-w} ${-l*.3} ${-w*.85} ${-l*.92} 0 ${-l}C${w*.85} ${-l*.92} ${w} ${-l*.3} 0 0Z`;
+const T={dahlia:[[14,62,14,'gL',0],[12,50,13,'gM',7],[10,37,11,'gD',13],[8,24,8,'gP2',20]],
+rose:[[6,36,20,'gR',0],[5,30,17,'gR2',30],[4,22,14,'gR',45],[3,14,10,'gR2',70]],
+pink:[[6,34,20,'gP',0],[5,28,17,'gP',30],[4,20,13,'gP2',45],[3,12,9,'gP',70]],
+star:[[5,52,17,'gL',0],[5,36,12,'gM',36]]};
+function fl(t,x,y,s,r,d){let h='';
+T[t].forEach(([n,len,w,g,off],k)=>{for(let i=0;i<n;i++){const dl=(d+k*.4+i*.05).toFixed(2);
+h+=`<g transform="rotate(${off+i*360/n})"><path class="pt" style="--d:${dl}s" d="${pp(len,w)}" fill="url(#${g})" stroke="rgba(80,50,130,.28)" stroke-width=".6"/><path class="pt" style="--d:${(+dl+.3).toFixed(2)}s" d="M0 -3L0 ${-len*.75}" stroke="#fff" stroke-opacity=".4" stroke-width=".8" fill="none"/></g>`}});
+if(t=='dahlia'||t=='star'){for(let i=0;i<12;i++)h+=`<g transform="rotate(${i*30})"><path class="pt" style="--d:${d+1.6}s" d="M0 0L0 -11" stroke="#f3d27a"/><circle class="pt" style="--d:${d+1.6}s" cy="-12" r="1.8" fill="#c9962e"/></g>`;
+h+=`<circle class="pt" style="--d:${d+1.4}s" r="5" fill="#3d2a6b"/>`}
+else h+=`<circle class="pt" style="--d:${d+1.4}s" r="3" fill="#8a2f70"/>`;
+return `<g transform="translate(${x} ${y}) rotate(${r}) scale(${s})">${h}</g>`}
+const lf=(x,y,r,l,d)=>`<g transform="translate(${x} ${y}) rotate(${r})"><path class="pt" style="--d:${d}s" d="${pp(l,l*.28)}" fill="url(#gG)"/></g>`;
+const L=(a)=>a.map((q,i)=>lf(q[0],q[1],q[2],q[3],.2+i*.15)).join('');
+const F=(a)=>a.map(q=>fl(...q)).join('');
+const C={
+1:L([[20,20,100,140],[20,20,140,130],[20,20,60,120],[90,90,170,80],[90,90,100,90],[150,60,60,70]])+F([['dahlia',75,75,1.15,0,.4],['rose',185,50,.85,15,.9],['pink',50,185,.8,-10,1.2],['star',195,150,.6,20,1.5],['pink',140,120,.5,0,1.8],['star',255,35,.42,0,2],['rose',30,255,.45,0,2.2]]),
+2:L([[60,60,120,100],[60,60,70,90],[120,100,150,60]])+F([['pink',90,90,1.05,0,2],['star',170,60,.5,0,2.5],['rose',60,170,.5,0,2.7],['pink',150,150,.35,0,3]]),
+3:L([[-50,0,-70,24],[50,0,70,24],[0,0,-30,22],[0,0,30,22]])+F([['rose',-45,0,.4,0,0],['dahlia',0,0,.36,0,.5],['pink',45,0,.4,0,1]]),
+4:L([[0,0,40,50],[0,0,-60,45]])+F([['rose',0,0,1.1,0,0]]),
+5:L([[0,0,30,50],[0,0,-70,45]])+F([['star',0,0,.8,0,0],['pink',28,28,.4,0,.8]])};
+document.querySelectorAll('svg[data-c]').forEach(s=>s.innerHTML=C[s.dataset.c]);
+// start blooming: corners + ring now, others on scroll
+const go=e=>e.classList.add('go');
+document.getElementById('seal').onclick=()=>{const e=document.getElementById('env');e.classList.add('open');
+setTimeout(()=>{e.classList.add('gone');document.body.classList.add('opened');window.scrollTo(0,0);document.querySelectorAll('.cn svg,.rc svg').forEach(go)},1900);
+setTimeout(()=>e.remove(),3200)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');go(e.target);io.unobserve(e.target)}}),{threshold:.2});
+document.querySelectorAll('.reveal,svg.div,.ef svg').forEach(el=>io.observe(el));
+// falling petals
+const pc=document.getElementById('petals'),cols=['#b9a6e3','#e4a6cf','#cdbdf0'];
+function petal(d,once){const p=document.createElement('span');p.className='pl';p.style.left=Math.random()*100+'%';
+p.style.animationDuration=d+'s';p.style.background=cols[Math.floor(Math.random()*3)];if(once){p.style.top='30%';p.style.animationIterationCount=1;setTimeout(()=>p.remove(),7000)}else p.style.animationDelay=-Math.random()*15+'s';pc.appendChild(p)}
+for(let i=0;i<14;i++)petal(9+Math.random()*10);
+// countdown
+// EDIT HERE: new Date(year, month-1, day, hour24, minute)
+const EVENT=new Date(2027,3,24,20,0,0);
+function tick(){const df=EVENT-new Date();if(df<=0){document.getElementById('cd').style.display='none';document.getElementById('cdm').textContent='The celebration is here. Thank you for being part of our day.';return}
+[Math.floor(df/864e5),Math.floor(df%864e5/36e5),Math.floor(df%36e5/6e4),Math.floor(df%6e4/1e3)].forEach((v,i)=>document.getElementById('dhms'[i]).textContent=v)}
+tick();setInterval(tick,1000);
+function rsvp(ok){const n=document.getElementById('nm').value.trim();
+if(!n){document.getElementById('msg').textContent='Please enter your name first.';return}
+document.getElementById('msg').textContent=ok?`Thank you, ${n}! We can’t wait to celebrate with you.`:`Thank you for letting us know, ${n}. You will be missed.`;
+if(ok)for(let i=0;i<30;i++)petal(3+Math.random()*3,true)}
+document.getElementById('yes').onclick=()=>rsvp(true);document.getElementById('no').onclick=()=>rsvp(false);
+</script>
+</body>
+</html>
