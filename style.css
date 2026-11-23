@@ -87,6 +87,21 @@ details p{margin:10px 0 0;color:var(--muted)}
 .footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:15px}
 .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot p{margin:6px 0 0}
 .rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}.rv.show{opacity:1;transform:none}
+.guide-video {
+    max-width: 480px;
+    margin: 24px auto;
+    text-align: center;
+  }
+  .guide-video .guide-title {
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .guide-video video {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    background: #000;
+  }
 @media (max-width:900px){.hero{grid-template-columns:1fr;padding-top:30px}.themes,.features,.plans,.steps{grid-template-columns:1fr 1fr}.plan.hot{transform:none}}
 @media (max-width:640px){.menu-btn{display:block}nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--bg);flex-direction:column;align-items:flex-start;padding:20px 22px;gap:16px;border-bottom:1px solid var(--line)}nav.open{display:flex}.themes,.features,.plans,.steps{grid-template-columns:1fr}.cta{padding:32px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
