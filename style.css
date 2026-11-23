@@ -93,8 +93,7 @@ details p{margin:10px 0 0;color:var(--muted)}
     text-align: center;
   }
   .guide-video .guide-title {
-    margin-bottom: 8px;
-    font-weight: 600;
+    text-transform:uppercase;letter-spacing:.2em;font-size:13px;font-weight:600;color:var(--gold);margin:0 0 12px;
   }
   .guide-video video {
     width: 100%;
